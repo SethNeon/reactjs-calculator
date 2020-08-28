@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Displaying Text Directions With setPanel()</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiWEl1WGK3JoiSpobYCxc3qJ8gRYrD37Y&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./map.css" />
+    <script src="./map.js"></script>
+  </head>
+  <body>
+    <div id="floating-panel">
+      <strong>Start:</strong>
+      <select id="start">
+        <option value="{lat: 1.3918268999999999,lng: 103.91028790000001}">Curent location</option>
+        <option value="{lat: 1.3918268999999999,lng: 103.91028790000001}">Curent 2</option>
+      </select>
+      <br />
+      <strong>End:</strong>
+      <select id="end">
+        
+        <option value="{lat: 1.4067,lng: 103.9022"> WaterWay Point</option>
+
+      </select>
+    </div>
+    <div id="floating-panel2">
+        <b>Mode of Travel: </b>
+        <select id="mode">
+          <option value="DRIVING">Driving</option>
+          <option value="WALKING">Walking</option>
+          <option value="TRANSIT">Transit</option>
+        </select>
+      </div>
+    <div id="right-panel"></div>
+    <div id="map"></div>
+  </body>
+</html>
